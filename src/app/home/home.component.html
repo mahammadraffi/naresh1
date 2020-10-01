@@ -1,0 +1,32 @@
+<!-- property binding -->
+<img [src]="raffi" alt="">
+<!-- end -->
+
+<!-- style binding -->
+<p [style.background]="color?'red':'yellow'">lorem</p>
+<!-- end -->
+<!-- class binding -->
+<p [class.name]='color'>Lorem ipsum dolor sit.</p>
+<!-- end -->
+
+<!-- attrbuite binding -->
+<form action="">
+    <tr>
+        <td [attr.colspan]='colspan'>test-name</td>
+    </tr>
+</form>
+<!-- end -->
+<!-- event binding -->
+<button (click)=r($event)>submit</button>
+
+<!-- end -->
+
+<!-- event filtering -->
+<input type="text" (keyup.enter)=p($event)>
+<!-- end -->
+
+<!-- event filtering -->
+<input type="text" #email (keyup.enter)="t(email.value)"> 
+<!-- end -->
+ 
+
